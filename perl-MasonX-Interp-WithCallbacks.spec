@@ -8,13 +8,13 @@
 Summary:	MasonX::Interp::WithCallbacks - Mason callback support via Params::CallbackRequest
 Summary(pl):	MasonX::Interp::WithCallbacks - obs³uga callbacków Masona poprzez Params::CallbackRequest
 Name:		perl-MasonX-Interp-WithCallbacks
-Version:	1.11
+Version:	1.13
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	0f0fa00e6a5d2c5318ad48ef9cea3705
+# Source0-md5:	cd0b2a49683d4c67fb2aa44dadedc42f
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
@@ -50,17 +50,17 @@ ka¿dego ¿±dania lub przez specjalnie nazwane klucze w argumentach
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL \
-	INSTALLDIRS=vendor
-%{__make}
+%{__perl} Build.PL \
+	installdirs=vendor \
+	destdir=$RPM_BUILD_ROOT
+./Build
 
-%{?with_tests:%{__make} test}
+%{?with_tests:./Build test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
+./Build install 
 
 %clean
 rm -rf $RPM_BUILD_ROOT
