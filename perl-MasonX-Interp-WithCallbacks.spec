@@ -20,7 +20,7 @@ BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-Class-Container >= 0.09
 BuildRequires:	perl-HTML-Mason >= 1.23
-BuildRequires:	perl(Params::CallbackRequest) >= 1.11
+BuildRequires:	perl-Params-CallbackRequest >= 1.11
 BuildRequires:	perl(Test::Simple) >= 0.17
 %endif
 BuildArch:	noarch
