@@ -3,8 +3,8 @@
 %bcond_with	tests	# perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	MasonX
-%define	pnam	Interp-WithCallbacks
+%define		pdir	MasonX
+%define		pnam	Interp-WithCallbacks
 Summary:	MasonX::Interp::WithCallbacks - Mason callback support via Params::CallbackRequest
 Summary(pl):	MasonX::Interp::WithCallbacks - obs³uga callbacków Masona poprzez Params::CallbackRequest
 Name:		perl-MasonX-Interp-WithCallbacks
