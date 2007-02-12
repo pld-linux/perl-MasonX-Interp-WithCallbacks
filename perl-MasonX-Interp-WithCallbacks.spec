@@ -6,7 +6,7 @@
 %define		pdir	MasonX
 %define		pnam	Interp-WithCallbacks
 Summary:	MasonX::Interp::WithCallbacks - Mason callback support via Params::CallbackRequest
-Summary(pl):	MasonX::Interp::WithCallbacks - obs³uga callbacków Masona poprzez Params::CallbackRequest
+Summary(pl.UTF-8):   MasonX::Interp::WithCallbacks - obsÅ‚uga callbackÃ³w Masona poprzez Params::CallbackRequest
 Name:		perl-MasonX-Interp-WithCallbacks
 Version:	1.13
 Release:	1
@@ -36,15 +36,15 @@ by specially named keys in the Mason request arguments, and all
 callbacks are executed at the beginning of a request, just before
 Mason creates and executes the request component stack.
 
-%description -l pl
-MasonX::Interp::WithCallbacks jest podklas± HTML::Mason::Interp
-dostarczaj±c± Masonowi system wywo³añ zwrotnych (callbacków) zbudowany
-w oparciu o Params::CallbackRequest. Callbacki mog± byæ referencjami
+%description -l pl.UTF-8
+MasonX::Interp::WithCallbacks jest podklasÄ… HTML::Mason::Interp
+dostarczajÄ…cÄ… Masonowi system wywoÅ‚aÅ„ zwrotnych (callbackÃ³w) zbudowany
+w oparciu o Params::CallbackRequest. Callbacki mogÄ… byÄ‡ referencjami
 do kodu przekazanymi do konstruktora new() lub metodami zdefiniowanymi
-w podklasach Params::Callback. Wywo³ania zwrotne s± wyzwalane albo dla
-ka¿dego ¿±dania lub przez specjalnie nazwane klucze w argumentach
-¿±dañ Masona, zaraz przed tym, jak Mason tworzy i wykonuje stos
-¿±danych komponentów.
+w podklasach Params::Callback. WywoÅ‚ania zwrotne sÄ… wyzwalane albo dla
+kaÅ¼dego Å¼Ä…dania lub przez specjalnie nazwane klucze w argumentach
+Å¼Ä…daÅ„ Masona, zaraz przed tym, jak Mason tworzy i wykonuje stos
+Å¼Ä…danych komponentÃ³w.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
