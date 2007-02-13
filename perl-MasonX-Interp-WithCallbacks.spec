@@ -6,7 +6,7 @@
 %define		pdir	MasonX
 %define		pnam	Interp-WithCallbacks
 Summary:	MasonX::Interp::WithCallbacks - Mason callback support via Params::CallbackRequest
-Summary(pl.UTF-8):   MasonX::Interp::WithCallbacks - obsługa callbacków Masona poprzez Params::CallbackRequest
+Summary(pl.UTF-8):	MasonX::Interp::WithCallbacks - obsługa callbacków Masona poprzez Params::CallbackRequest
 Name:		perl-MasonX-Interp-WithCallbacks
 Version:	1.13
 Release:	1
