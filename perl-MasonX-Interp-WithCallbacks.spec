@@ -9,7 +9,7 @@ Summary:	MasonX::Interp::WithCallbacks - Mason callback support via Params::Call
 Summary(pl.UTF-8):	MasonX::Interp::WithCallbacks - obsługa callbacków Masona poprzez Params::CallbackRequest
 Name:		perl-MasonX-Interp-WithCallbacks
 Version:	1.13
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -70,5 +70,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
+%dir %{perl_vendorlib}/MasonX/Interp
 %{perl_vendorlib}/MasonX/*/*.pm
 %{_mandir}/man3/*
