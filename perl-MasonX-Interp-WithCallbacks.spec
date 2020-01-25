@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_with	tests	# perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	MasonX
 %define		pnam	Interp-WithCallbacks
 Summary:	MasonX::Interp::WithCallbacks - Mason callback support via Params::CallbackRequest
